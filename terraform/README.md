@@ -3,20 +3,22 @@
 This Terraform configuration sets up an AWS ECS Fargate deployment for the blockchain client application. It includes resources for an ECS cluster, task definition, ECS service, Application Load Balancer (ALB), security groups, and the necessary IAM roles. The configuration uses local Terraform state.
 
 ## Directory Structure
+```bash
 /terraform
 ├── main.tf         # Main Terraform configuration for ECS Fargate resources
 ├── variables.tf    # Variable definitions for configuration parameters
 ├── outputs.tf      # Outputs for key resources (e.g., ALB DNS name, ECS Cluster ID)
 └── README.md       # This documentation file
+```
 
 ## How to Use
 
 1. **Configure Variables:**  
-   Update `variables.tf` or provide a `terraform.tfvars` file with your environment details such as:
+   Update `variables.tf` or provide a `terraform.tfvars` file with the environment details such as:
    - `vpc_id`
    - `public_subnets` (list of public subnet IDs)
    - `private_subnets` (list of private subnet IDs)
-   - `image_url` (the URL of your Docker image in a registry)
+   - `image_url` (the URL of the Docker image in a registry)
 
 2. **Initialize Terraform:**  
    ```bash
@@ -34,7 +36,7 @@ This Terraform configuration sets up an AWS ECS Fargate deployment for the block
    ```
 
 ## Deployment
-### 5. Terraform configuration is set up to run on ARM64 (Graviton2) in Fargate, so then the container image should be built for ARM64
+5. Terraform configuration is set up to run on ARM64 (Graviton2) in Fargate, so then the container image should be built for ARM64
 
 ## Production Considerations
 
