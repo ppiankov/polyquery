@@ -12,6 +12,7 @@ This is a simple blockchain client implemented in Go that interacts with the Pol
 *(Instructions for setting up the local environment, virtual environment, etc.)*
 
 ## Directory Structure
+   ```bash
 ├── terraform
 │   ├── main.tf         # Main Terraform configuration for ECS Fargate resources
 │   ├── variables.tf    # Variable definitions for configuration parameters
@@ -25,6 +26,7 @@ This is a simple blockchain client implemented in Go that interacts with the Pol
 │   └── test_main.py      # Unit tests for the API endpoints
 └── Dockerfile            # Dockerfile to build the container image
 ├── README.md             # This documentation file
+   ```
 
 ### Building and Running Locally
 
@@ -67,7 +69,7 @@ This is a simple blockchain client implemented in Go that interacts with the Pol
    ```
 
 ## Deployment
-### 4. The Terraform configuration is set up to run on ARM64 (Graviton2) in Fargate. Therefore, the container image should be built for ARM64. This ensures that your deployment leverages the cost and performance benefits of AWS Graviton2.
+4. The Terraform configuration is set up to run on ARM64 (Graviton2) in Fargate. Therefore, the container image should be built for ARM64. This ensures that deployment leverages the cost and performance benefits of AWS Graviton2.
 
 ## Production Considerations
 
