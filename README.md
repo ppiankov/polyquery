@@ -14,10 +14,10 @@ This is a simple blockchain client implemented in Go that interacts with the Pol
 ## Directory Structure
    ```bash
 ├── terraform
-│   ├── main.tf         # Main Terraform configuration for ECS Fargate resources
-│   ├── variables.tf    # Variable definitions for configuration parameters
-│   ├── outputs.tf      # Outputs for key resources (e.g., ALB DNS name, ECS Cluster ID)
-│   └── README.md       # terraform documentation file
+│   ├── main.tf           # Main Terraform configuration for ECS Fargate resources
+│   ├── variables.tf      # Variable definitions for configuration parameters
+│   ├── outputs.tf        # Outputs for key resources (e.g., ALB DNS name, ECS Cluster ID)
+│   └── README.md         # terraform documentation file
 ├── app
 │   ├── __init__.py       # This makes it a proper Python package so that it can be imported
 │   ├── main.py           # FastAPI application with the endpoints
