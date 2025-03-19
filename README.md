@@ -24,7 +24,7 @@ This is a simple blockchain client implemented in Go that interacts with the Pol
 │   └── requirements.txt  # Dependencies list
 ├── tests
 │   └── test_main.py      # Unit tests for the API endpoints
-└── Dockerfile            # Dockerfile to build the container image
+├── Dockerfile            # Dockerfile to build the container image
 └── README.md             # This documentation file
    ```
 
