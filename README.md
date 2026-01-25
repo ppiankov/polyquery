@@ -1,5 +1,11 @@
 # Blockchain Client Application
 
+> ⚠️ Experimental / exploratory project
+>
+> Polyquery explores ideas around querying across heterogeneous data
+> sources. It is not a production-ready system and is not actively
+> maintained.
+
 This is a simple blockchain client implemented in Go that interacts with the Polygon network via its JSON-RPC API. The application exposes two endpoints to get the current block number and retrieve details about a specific block.
 
 ## Endpoints
